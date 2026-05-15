@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Melwin Dave D. Abe | Full-Stack Developer</title>
+
+  <meta name="description" content="Melwin Dave D. Abe — Full-stack developer specializing in Vue.js, PHP, and modern web technologies. Building clean, scalable web applications." />
+  <meta name="keywords" content="Melwin Dave Abe, Full Stack Developer, Vue.js Developer, PHP Developer, Web Developer, JavaScript, Tailwind CSS" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Melwin Dave D. Abe | Full-Stack Developer" />
+  <meta property="og:description" content="Full-stack developer specializing in Vue.js, PHP, and modern web technologies." />
+  <meta property="og:image" content="./images/abe.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:title" content="Melwin Dave D. Abe | Full-Stack Developer" />
+  <meta property="twitter:description" content="Full-stack developer specializing in Vue.js, PHP, and modern web technologies." />
+
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <canvas id="matrix-canvas"></canvas>
+
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <div class="nav__logo"></div>
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work"       class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+          <li class="nav__item"><a href="#about"      class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#contact"    class="nav__link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header__text-box row">
+      <div class="header__text">
+        <p class="header__greeting">Hello, I'm</p>
+        <h1 class="heading-primary">
+          <span>Melwin Dave D. Abe</span>
+        </h1>
+        <p class="header__role"><span class="header__role-bracket">&lt;</span>Full-Stack Developer<span class="header__role-bracket">/&gt;</span></p>
+        <p class="header__tagline">I build clean, scalable web applications — from pixel-perfect frontends to robust backends.</p>
+        <div class="header__cta">
+          <a href="#work"    class="btn btn--pink">View My Work</a>
+          <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="header__scroll" aria-hidden="true">
+      <div class="header__scroll-mouse"><div class="header__scroll-wheel"></div></div>
+      <span class="header__scroll-label">Scroll</span>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Projects</h2>
+        <div class="work__boxes">
+
+          <!-- Project 1 -->
+          <div class="work__box fade-in">
+            <div class="work__text">
+              <span class="work__tag">Full-Stack</span>
+              <h3>TG Rabbitry</h3>
+              <p class="work__desc">E-commerce Website for rabbits and accesories. Consist of two types of user such as: admin and customer. System has management of budget, expenses, rabbit breeding, rabbit illness and task management. </p>
+              <ul class="work__list">
+                <li>Vue.js</li>
+                <li>Tailwind CSS</li>
+                <li>JavaScript</li>
+                <li>PHP</li>
+              </ul>
+              <div class="work__links">
+                <a href="https://github.com/Grimxs/TGRabbitry" target="_blank" rel="noopener noreferrer" class="link__text">
+                  View on GitHub <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <div class="mockup-browser">
+                <div class="mockup-browser__bar">
+                  <span class="mockup-browser__dot mockup-browser__dot--red"></span>
+                  <span class="mockup-browser__dot mockup-browser__dot--yellow"></span>
+                  <span class="mockup-browser__dot mockup-browser__dot--green"></span>
+                  <div class="mockup-browser__url">tgrabbitry.app</div>
+                </div>
+                <div class="mockup-browser__screen">
+                  <div class="mockup-sidebar">
+                    <div class="mockup-sidebar__logo">TG</div>
+                    <div class="mockup-sidebar__item mockup-sidebar__item--active">Dashboard</div>
+                    <div class="mockup-sidebar__item">Rabbits</div>
+                    <div class="mockup-sidebar__item">Sales</div>
+                    <div class="mockup-sidebar__item">Inventory</div>
+                  </div>
+                  <div class="mockup-content">
+                    <div class="mockup-content__header">Dashboard Overview</div>
+                    <div class="mockup-stats">
+                      <div class="mockup-stat"><div class="mockup-stat__num">48</div><div class="mockup-stat__label">Rabbits</div></div>
+                      <div class="mockup-stat"><div class="mockup-stat__num">12</div><div class="mockup-stat__label">Sales</div></div>
+                      <div class="mockup-stat"><div class="mockup-stat__num">7</div><div class="mockup-stat__label">Breeds</div></div>
+                    </div>
+                    <div class="mockup-table">
+                      <div class="mockup-table__row mockup-table__row--head"><span>Name</span><span>Breed</span><span>Status</span></div>
+                      <div class="mockup-table__row"><span>Bunny #1</span><span>Rex</span><span class="mockup-badge mockup-badge--green">Active</span></div>
+                      <div class="mockup-table__row"><span>Bunny #2</span><span>Angora</span><span class="mockup-badge mockup-badge--green">Active</span></div>
+                      <div class="mockup-table__row"><span>Bunny #3</span><span>Lionhead</span><span class="mockup-badge mockup-badge--pink">Sold</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="work__box work__box--reverse fade-in">
+            <div class="work__text">
+              <span class="work__tag">Frontend</span>
+              <h3>Portfolio Website</h3>
+              <p class="work__desc">A personal portfolio site built from scratch with a custom matrix rain animation, responsive layout, and a contact form integrated with Formspree. Designed for performance and clean aesthetics.</p>
+              <ul class="work__list">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Formspree</li>
+              </ul>
+              <div class="work__links">
+                <a href="https://github.com/melwindaveabe" target="_blank" rel="noopener noreferrer" class="link__text">
+                  View on GitHub <span>&rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <div class="mockup-browser">
+                <div class="mockup-browser__bar">
+                  <span class="mockup-browser__dot mockup-browser__dot--red"></span>
+                  <span class="mockup-browser__dot mockup-browser__dot--yellow"></span>
+                  <span class="mockup-browser__dot mockup-browser__dot--green"></span>
+                  <div class="mockup-browser__url">melwindaveabe.github.io</div>
+                </div>
+                <div class="mockup-browser__screen mockup-portfolio-screen">
+                  <div class="mockup-portfolio">
+                    <div class="mockup-portfolio__hero">
+                      <div class="mockup-portfolio__name">Melwin Dave D. Abe</div>
+                      <div class="mockup-portfolio__role">Full-Stack Developer</div>
+                      <div class="mockup-portfolio__cta"></div>
+                    </div>
+                    <div class="mockup-portfolio__bars">
+                      <div class="mockup-portfolio__bar"></div>
+                      <div class="mockup-portfolio__bar mockup-portfolio__bar--short"></div>
+                      <div class="mockup-portfolio__bar"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** Experience ***** -->
+
+    <section class="experience" id="experience">
+      <div class="row">
+        <h2>Experience</h2>
+        <div class="timeline">
+
+          <div class="timeline__item fade-in">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <div class="timeline__header">
+                <h3 class="timeline__role">Full-Stack Developer</h3>
+                <span class="timeline__period">2023 — Present</span>
+              </div>
+              <p class="timeline__company">Freelance</p>
+              <p class="timeline__desc">Designing and developing full-stack web applications using Vue.js and PHP. Delivering end-to-end solutions from database design to responsive UI implementation.</p>
+              <ul class="timeline__tags">
+                <li>Vue.js</li><li>PHP</li><li>MySQL</li><li>Tailwind CSS</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline__item fade-in">
+            <div class="timeline__dot"></div>
+            <div class="timeline__content">
+              <div class="timeline__header">
+                <h3 class="timeline__role">Bachelor of Science Computer Engineering</h3>
+                <span class="timeline__period">Graduated 2022</span>
+              </div>
+              <p class="timeline__company">STI College Batangas / Academic</p>
+              <p class="timeline__desc">Project leader</p>
+              <ul class="timeline__tags">
+                <li>Algorithms</li><li>OOP</li><li>Web Dev</li><li>Git</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content fade-in">
+          <div class="about__text">
+            <p>
+              Hi, I'm <strong>Melwin Dave D. Abe</strong> — a full-stack developer who loves turning complex problems into clean, intuitive web experiences. I specialize in building modern applications with Vue.js on the frontend and PHP on the backend.
+            </p>
+            <p>
+              I'm driven by a passion for writing maintainable code and delivering products that actually work well for real users. Whether it's architecting a database schema or fine-tuning a UI animation, I care about the details.
+            </p>
+
+            <!-- <div class="about__stats">
+              <div class="about__stat">
+                <span class="about__stat-num" data-target="2">0</span><span class="about__stat-plus">+</span>
+                <span class="about__stat-label">Years Coding</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-num" data-target="5">0</span><span class="about__stat-plus">+</span>
+                <span class="about__stat-label">Projects Built</span>
+              </div>
+              <div class="about__stat">
+                <span class="about__stat-num" data-target="3">0</span><span class="about__stat-plus">+</span>
+                <span class="about__stat-label">Tech Stacks</span>
+              </div>
+            </div> -->
+
+            <p class="about__skills-label">Technologies I work with</p>
+            <div class="about__skills">
+              <span class="skill-tag">Vue.js</span>
+              <span class="skill-tag">JavaScript</span>
+              <span class="skill-tag">PHP</span>
+              <span class="skill-tag">Tailwind CSS</span>
+              <span class="skill-tag">HTML / CSS</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">REST APIs</span>
+            </div>
+            <a href="ABE_MELWIN DAVE_RESUME.pdf" class="btn" target="_blank" rel="noopener noreferrer">Download Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <div class="about__photo-frame">
+              <img class="about__photo" src="./images/abe.jpg" alt="Melwin Dave D. Abe" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info fade-in">
+        <p>
+          Have a project in mind or just want to say hi? I'd love to hear from you. I'm currently open to freelance work and full-time opportunities.
+        </p>
+        <form
+          class="contact__form"
+          action="https://formspree.io/f/YOUR_FORM_ID"
+          method="POST"
+          onsubmit="handleFormSubmit(event)"
+        >
+          <div class="contact__form-group">
+            <div class="contact__field">
+              <label class="contact__label" for="c-name">Name</label>
+              <input id="c-name" type="text" name="name" class="contact__input" placeholder="Your Name" required />
+            </div>
+            <div class="contact__field">
+              <label class="contact__label" for="c-email">Email</label>
+              <input id="c-email" type="email" name="email" class="contact__input" placeholder="Your Email" required />
+            </div>
+          </div>
+          <div class="contact__field">
+            <label class="contact__label" for="c-message">Message</label>
+            <textarea id="c-message" name="message" class="contact__input contact__textarea" placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--pink contact__submit">Send Message</button>
+        </form>
+        <p class="contact__or">Or reach me directly at</p>
+        <a href="mailto:abemelwin01@gmail.com" class="btn">abemelwin01@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://github.com/melwindaveabe" title="GitHub Profile" target="_blank" rel="noopener noreferrer">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="mailto:abemelwin01@gmail.com" title="Send Email" class="footer__email-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect width="20" height="16" x="2" y="4" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <p class="footer__copy">
+        &copy; <span id="footer-year"></span> Melwin Dave D. Abe &mdash; Designed &amp; built by
+        <a href="https://github.com/melwindaveabe" class="link">Dave</a>.
+      </p>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>

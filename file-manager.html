@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Manager - Melwin Dave D. Abe</title>
+    <link rel="stylesheet" href="file-manager.css">
+</head>
+<body>
+    <div id="app" class="file-manager-container">
+        <!-- Header -->
+        <header class="fm-header">
+            <div class="fm-header-content">
+                <div class="fm-logo">
+                    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="fm-logo-svg">
+                        <rect x="10" y="30" width="80" height="55" rx="5" fill="#3B82F6" />
+                        <rect x="10" y="20" width="35" height="15" rx="3" fill="#3B82F6" />
+                        <rect x="10" y="20" width="35" height="15" rx="3" fill="none" stroke="#1E40AF" stroke-width="1" />
+                        <line x1="20" y1="45" x2="65" y2="45" stroke="white" stroke-width="3" stroke-linecap="round" />
+                        <line x1="20" y1="57" x2="80" y2="57" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+                        <line x1="20" y1="67" x2="75" y2="67" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.8" />
+                        <rect x="10" y="30" width="80" height="8" rx="5" fill="white" opacity="0.15" />
+                    </svg>
+                    <div>
+                        <div class="fm-logo-text">FileHub</div>
+                        <div class="fm-logo-subtext">Manager</div>
+                    </div>
+                </div>
+                <h1 class="fm-title">File Manager</h1>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="fm-main">
+            <!-- Breadcrumb & Counter -->
+            <div class="fm-breadcrumb-section">
+                <div class="fm-breadcrumbs" id="breadcrumbs"></div>
+                <span class="fm-counter" id="fileCounter">📊 0 item(s)</span>
+            </div>
+
+            <!-- Toolbar -->
+            <div class="fm-toolbar">
+                <div class="fm-toolbar-actions">
+                    <button id="newFolderBtn" class="fm-btn fm-btn-primary" title="Create new folder">
+                        <span>📁</span> New Folder
+                    </button>
+                    <label class="fm-btn fm-btn-success" title="Upload file">
+                        <span>📤</span> Upload File
+                        <input type="file" id="fileInput" class="fm-hidden-input" />
+                    </label>
+                </div>
+
+                <div class="fm-toolbar-controls">
+                    <input 
+                        type="text" 
+                        id="searchInput" 
+                        class="fm-search-input" 
+                        placeholder="🔍 Search files..."
+                    />
+                    <select id="sortBy" class="fm-select">
+                        <option value="name">📝 Sort: Name</option>
+                        <option value="type">🔤 Sort: Type</option>
+                    </select>
+                    <div class="fm-view-toggle">
+                        <button id="gridViewBtn" class="fm-view-btn fm-view-btn-active" data-view="grid" title="Grid view">⊞ Grid</button>
+                        <button id="listViewBtn" class="fm-view-btn" data-view="list" title="List view">≡ List</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- New Folder Input -->
+            <div id="newFolderInput" class="fm-new-folder fm-hidden">
+                <p class="fm-new-folder-label">✨ Create New Folder</p>
+                <div class="fm-new-folder-controls">
+                    <input 
+                        type="text" 
+                        id="newFolderName" 
+                        class="fm-input" 
+                        placeholder="Enter folder name..."
+                    />
+                    <button id="createFolderBtn" class="fm-btn fm-btn-primary">✓ Create</button>
+                    <button id="cancelFolderBtn" class="fm-btn fm-btn-secondary">✕ Cancel</button>
+                </div>
+            </div>
+
+            <!-- Files Grid View -->
+            <div id="gridView" class="fm-grid">
+                <div id="filesGrid" class="fm-grid-content"></div>
+                <div id="emptyState" class="fm-empty-state fm-hidden">
+                    <div class="fm-empty-icon">📭</div>
+                    <p class="fm-empty-title">No files or folders found</p>
+                    <p class="fm-empty-subtitle">Create a new folder or upload a file to get started!</p>
+                </div>
+            </div>
+
+            <!-- Files List View -->
+            <div id="listView" class="fm-list fm-hidden">
+                <div id="filesList" class="fm-list-content"></div>
+                <div id="emptyStateList" class="fm-empty-state fm-hidden">
+                    <div class="fm-empty-icon">📭</div>
+                    <p class="fm-empty-title">No files or folders found</p>
+                    <p class="fm-empty-subtitle">Create a new folder or upload a file to get started!</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="file-manager.js"></script>
+</body>
+</html>

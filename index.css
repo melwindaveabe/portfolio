@@ -434,6 +434,7 @@ body:not(.user-is-tabbing) a:focus { outline: none; }
 }
 
 .work__links { display: flex; align-items: center; margin-top: var(--gutter-small); }
+.work__links-separator { margin: 0 1rem; color: var(--pink); opacity: 0.5; }
 .work__text  { flex: 0 0 45%; }
 
 .work__desc {
